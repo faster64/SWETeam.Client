@@ -1,0 +1,12 @@
+<div class="base-verify">
+    <div class="back-to-home">
+        <swe-team-button color="basic" text="Trang chủ" [ngClass]="'home'" (onClick)="backToHome()"></swe-team-button>
+    </div>
+
+    <div class="base-verify-form shadow">
+        <ng-content select=".verify-title"></ng-content>
+        <verify-box [allowNumbersOnly]="true" [verifyText]="verifyText" [verifyingText]="verifyingText" (onReady)="verify($event)" (onResend)="resend($event)"></verify-box>
+        <ng-content select=".verify-content"></ng-content>
+        <ng-content select=".verify-footer"></ng-content>
+    </div>
+</div>

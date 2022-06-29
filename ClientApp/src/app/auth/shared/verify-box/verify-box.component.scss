@@ -1,0 +1,26 @@
+@import url("../../../../assets/css/var-spacing.css");
+.verify-box {
+    display: inline-block;
+    padding: 4px 8px;
+    .enter-otp-field {
+        margin-bottom: 8px;
+    }
+    .verify-btn {
+        flex-basis: 100%;
+    }
+    .re-provide-otp {
+        margin-top: 12px;
+        text-align: center;
+        .resend {
+            margin-left: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+:host ::ng-deep {
+    .base-button {
+        padding: 0 !important;
+    }
+}

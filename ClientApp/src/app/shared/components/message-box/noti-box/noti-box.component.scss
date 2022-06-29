@@ -1,0 +1,16 @@
+::ng-deep {
+    .mat-dialog-container {
+        padding-top: 12px !important;
+    }
+    .mat-dialog-title {
+        cursor: move;
+    }
+    .cdk-overlay-pane {
+        width: unset !important;
+        height: unset !important;
+        max-width: 90% !important;
+    }
+    .mat-dialog-container {
+        resize: both;
+    }
+}

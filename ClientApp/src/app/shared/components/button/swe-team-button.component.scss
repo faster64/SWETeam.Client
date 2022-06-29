@@ -1,0 +1,27 @@
+.base-button {
+    // padding: 0 4px;
+}
+
+::ng-deep {
+    .full-width {
+        .base-button {
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+    .processing {
+        position: absolute;
+        right: 5px;
+        animation: clockwise 0.5s infinite linear;
+    }
+}
+
+@keyframes clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

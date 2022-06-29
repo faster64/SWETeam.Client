@@ -1,0 +1,11 @@
+<div class="register-verify">
+    <verify-form [endpoint]="endpoint" (onSuccess)="verifySuccess($event)" (onFailed)="verifyFailed($event)" (onResend)="resend($event)">
+        <div class="verify-title">
+            <h2 style="font-size: 22px; text-align: center;">Nhập mã kích hoạt tài khoản {{userMail}}</h2>
+        </div>
+
+        <div class="verify-footer" style="margin-top: 16px;">
+            <p style="font-size: 13px;">Mã OTP được gửi về <span style="font-weight: bold;">{{userMail}}</span>. Nếu không thấy vui lòng kiểm tra trong thư rác/spam. Xin cảm ơn!</p>
+        </div>
+    </verify-form>
+</div>

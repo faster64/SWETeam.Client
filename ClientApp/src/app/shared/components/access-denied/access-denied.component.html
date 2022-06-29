@@ -1,0 +1,8 @@
+<div class="access-denied">
+    <p style="text-align: center; margin-top: 50px; font-size: 36px;">Bạn không có quyền truy cập</p>
+    <div style="display: flex; justify-content: center; margin-top: 48px;">
+        <swe-team-button text="Quay lại" (onClick)="back($event)"></swe-team-button>
+        <div style="margin-right: 16px"></div>
+        <swe-team-button #issueBtn *ngIf="hasIssue()" color="warn" text="Xử lý sự cố" (onClick)="handleIssue()"></swe-team-button>
+    </div>
+</div>

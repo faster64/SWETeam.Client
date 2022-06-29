@@ -1,0 +1,73 @@
+<div class="register">
+    <div class="register-form shadow">
+        <div class="form-header"></div>
+        <div class="form-content">
+
+            <div class="row-item email">
+                <mat-form-field appearance="fill">
+                    <mat-label>Email <span style="color: red;">*</span></mat-label>
+                    <input #email type="email" matInput placeholder="your-mail@example.com" [(ngModel)]="user.Email">
+                </mat-form-field>
+            </div>
+
+            <div class="row-item dis-flex justify-content-between">
+                <div class="password">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Mật khẩu <span style="color: red;">*</span></mat-label>
+                        <input #password type="password" matInput [(ngModel)]="user.Password">
+                    </mat-form-field>
+                </div>
+                <div class="confirm-password">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Xác nhận mật khẩu <span style="color: red;">*</span></mat-label>
+                        <input #confirmPassword type="password" matInput [(ngModel)]="user.ConfirmPassword">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row-item dis-flex justify-content-between fullname">
+                <div class="first-name">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Họ <span style="color: red;">*</span></mat-label>
+                        <input #firstName type="text" matInput [(ngModel)]="user.FirstName">
+                    </mat-form-field>
+                </div>
+                <div class="last-name">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Tên <span style="color: red;">*</span></mat-label>
+                        <input #lastName type="text" matInput [(ngModel)]="user.LastName">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row-item address">
+                <mat-form-field appearance="fill">
+                    <mat-label>Địa chỉ <span style="color: red;">*</span></mat-label>
+                    <input #address type="text" matInput [(ngModel)]="user.Address">
+                </mat-form-field>
+            </div>
+
+            <div class="row-item gender" style="margin-bottom: 16px;">
+                <mat-radio-group aria-label="Chọn giới tính" [(ngModel)]="user.Gender">
+                    <mat-radio-button value="0">Nam</mat-radio-button>
+                    <mat-radio-button value="1">Nữ</mat-radio-button>
+                    <mat-radio-button value="2">Khác</mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <div class="row-item policy" style="margin-bottom: 16px;">
+                <mat-checkbox [(ngModel)]="acceptPolicy">
+                    Tôi đồng ý với điều khoản
+                </mat-checkbox>
+            </div>
+            <div class="row-item register-btn">
+                <swe-team-button #registerBtn text="Đăng ký" executingText="Đang xử lý" (onClick)="register($event)"></swe-team-button>
+            </div>
+
+            <div class="row-item has-account" style="margin-top: 16px; text-align: center;">
+                <p>Bạn đã có tài khoản? <a href="/login" class="login-text">Đăng nhập</a></p>
+            </div>
+        </div>
+        <div class="form-footer">Copyright ©2022 SWE Team</div>
+    </div>
+</div>

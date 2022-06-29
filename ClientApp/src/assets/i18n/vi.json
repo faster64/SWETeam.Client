@@ -1,0 +1,9 @@
+{
+    "LOGIN": {
+        "USERNAME": "Tài khoản",
+        "PASSWORD": "Mật khẩu"
+    },
+    "REGISTER": "Đăng ký",
+    "NO_DATA_TO_DISPLAY": "Không có dữ liệu",
+    "LOGIN_SUCCESS": "Đăng nhập thành công"
+}

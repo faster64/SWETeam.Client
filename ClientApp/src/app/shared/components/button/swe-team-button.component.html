@@ -1,0 +1,8 @@
+<div class="base-button" #baseBtn>
+    <button mat-raised-button [color]="color" [disabled]="disabled" [ngClass]="class" [ngStyle]="style" [draggable]="draggable" [autofocus]="autofocus" [name]="name" [value]="value" [hidden]="hidden" (click)="clickExecute($event)" (dblclick)="dlclickExecute($event)">
+    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+      <span>{{text}}</span>
+      <mat-icon *ngIf="!isFinished && canShowProcessing()" class="processing">data_usage</mat-icon>
+    </div>
+  </button>
+</div>

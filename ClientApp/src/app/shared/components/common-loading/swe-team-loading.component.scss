@@ -1,0 +1,45 @@
+@import url(../../../../assets/css/var-cls.css);
+.common-loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    .inner-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 120px;
+        height: 80px;
+        border-radius: 4px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    .loading-animation {
+        width: 48px;
+        height: 48px;
+        background-image: url(../../../../assets/img/loading.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: clockwiseSpin 0.5s infinite linear;
+    }
+    .loading-text {
+        flex-basis: 100%;
+        padding: 4px;
+        margin-top: 8px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@keyframes clockwiseSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

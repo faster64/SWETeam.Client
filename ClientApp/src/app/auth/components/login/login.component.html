@@ -1,0 +1,33 @@
+<div id="login">
+    <div class="login-form shadow">
+        <div class="form-header"></div>
+        <div class="form-content">
+            <div class="row-item email">
+                <mat-form-field appearance="fill">
+                    <mat-label>Email <span style="color: red;">*</span></mat-label>
+                    <input #email type="email" matInput placeholder="your-mail@example.com" [(ngModel)]="userCred.UserName" (keyup)="loginByEnter($event)">
+                </mat-form-field>
+            </div>
+
+            <div class="row-item password">
+                <mat-form-field appearance="fill">
+                    <mat-label>Mật khẩu <span style="color: red;">*</span></mat-label>
+                    <input #password type="password" matInput [(ngModel)]="userCred.Password" (keyup)="loginByEnter($event)">
+                </mat-form-field>
+            </div>
+
+            <div class="row-item forgot-password">
+                <a href="">Quên mật khẩu?</a>
+            </div>
+
+            <div class="row-item login-btn">
+                <swe-team-button #loginBtn text="Đăng nhập" executingText="Đang đang nhập" ngClass="full-width" (onClick)="login($event)"></swe-team-button>
+            </div>
+
+            <div class="row-item have-no-account" style="margin-top: 16px; text-align: center;">
+                <p>Chưa có có tài khoản? <a href="/register" class="register-text">Đăng ký</a></p>
+            </div>
+        </div>
+        <!-- <div class="form-footer">Copyright ©2022 SWE Team</div> -->
+    </div>
+</div>

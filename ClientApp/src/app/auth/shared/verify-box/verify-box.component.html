@@ -1,0 +1,15 @@
+<div class="verify-box">
+    <div class="enter-otp-field">
+        <ng-otp-input [config]="{ length: length, allowNumbersOnly: allowNumbersOnly, isPasswordInput: isPasswordInput, disableAutoFocus: disableAutoFocus, placeholder: placeholder}" (onInputChange)="onChange($event)" [draggable]="true"></ng-otp-input>
+    </div>
+
+    <div class="verify-btn">
+        <swe-team-button #verifyBtn [text]="verifyText" [executingText]="verifyingText" [disabled]="disabledBtn" [ngClass]="'full-width'" (onClick)="fireOTP($event)"></swe-team-button>
+    </div>
+
+    <div class="re-provide-otp">
+        <span>Không nhận được mã? </span>
+        <span *ngIf="!isShowResend" style="font-weight: bold;">{{countdown | CountDownPipe}}</span>
+        <span *ngIf="isShowResend" class="resend" (click)="resend($event)">Gửi mã mới</span>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+::ng-deep .my-custom-snackbar {
+    margin: 0 !important;
+    min-width: 400px !important;
+    .mat-button-wrapper {
+        color: #fff !important;
+    }
+    &.success {
+        background-color: #4caf50 !important;
+    }
+    &.warning {
+        background-color: #ffeb3b !important;
+        color: #000 !important;
+        .mat-button-wrapper {
+            color: #000 !important;
+        }
+    }
+    &.danger {
+        background-color: #f44336 !important;
+    }
+    // .mat-snack-bar-container span {
+    //     color: #fff !important;
+    // }
+}

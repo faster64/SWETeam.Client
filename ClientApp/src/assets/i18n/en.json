@@ -1,0 +1,22 @@
+{
+    "LOGIN": {
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "HAVE_NO_COMPANY": "Have no company?",
+        "REGISTER": "Register"
+    },
+    "SIDEBAR": {
+        "TASK": "Task",
+        "OVERVIEW": "Overview",
+        "MY_TASK": "My tasks",
+        "REPORT": "Report"
+    },
+    "KANBAN": {
+        "TASK_TO_DO": "To do tasks",
+        "TASK_DONE": "Done tasks",
+        "TASK_OVERDUE": "Overdue tasks",
+        "TASK_PROCESSING": "Doing tasks"
+    },
+    "NO_DATA_TO_DISPLAY": "No data",
+    "LOGIN_SUCCESS": "Login successfully"
+}

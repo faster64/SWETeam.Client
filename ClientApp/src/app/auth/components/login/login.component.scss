@@ -1,0 +1,59 @@
+@import url("../../../../assets/css/var-other.css");
+@import url("../../../../assets/css/var-cls.css");
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../assets/img/register-bg.png");
+    overflow: hidden;
+    .login-form {
+        width: 440px;
+        padding: 32px 48px;
+        border-radius: 4px;
+        background-color: #fff;
+        overflow: auto;
+        .form-header {
+            height: 80px;
+            margin-bottom: 16px;
+            background-image: url("../../../../assets/img/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .form-footer {
+            padding: 0 12px;
+            margin-top: 16px;
+            font-size: 12px;
+        }
+        .form-content {
+            .row-item {
+                padding: 0 12px;
+                 ::ng-deep {
+                    .mat-form-field {
+                        width: 100% !important;
+                    }
+                    .mat-form-field-wrapper div.mat-form-field-flex {
+                        background: none !important;
+                    }
+                    .mat-radio-button {
+                        margin-right: 24px;
+                    }
+                    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+                        border-color: #3f51b5 !important;
+                    }
+                    .mat-radio-button.mat-accent .mat-radio-inner-circle {
+                        background-color: #3f51b5 !important;
+                    }
+                    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+                        background-color: #3f51b5 !important;
+                    }
+                }
+            }
+            .login-btn {
+                margin-top: 24px;
+            }
+        }
+    }
+}
