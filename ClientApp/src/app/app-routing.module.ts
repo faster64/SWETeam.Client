@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterComponent } from './auth/components/register/register.component';
-import { AccessDeniedComponent } from './shared/components/access-denied/access-denied.component';
 import { Routing } from './shared/constants/common.constant';
 import { BaseGuard } from './shared/guard/base.guard';
 import { BaseResolver } from './shared/resolver/base.resolver';

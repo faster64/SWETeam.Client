@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   team: "swe_team",
-  api_url: "https://localhost:44398/",
-  auth_api_url: "https://localhost:44398/api/auth",
+  api_url: "https://localhost:44348/",
+  auth_api_url: "https://localhost:44348/api/auth",
 };
 
 /*
